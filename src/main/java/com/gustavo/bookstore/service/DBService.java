@@ -1,15 +1,9 @@
 package com.gustavo.bookstore.service;
 
 import java.util.Arrays;
-<<<<<<< HEAD
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-=======
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
->>>>>>> b546b20 (Criacao do perfil de DV)
 import com.gustavo.bookstore.domain.Categoria;
 import com.gustavo.bookstore.domain.Livro;
 import com.gustavo.bookstore.repostories.CategoriaRepository;
@@ -40,8 +34,5 @@ public class DBService {
 		categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
 		livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5));
 	}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> b546b20 (Criacao do perfil de DV)
+  } 
+

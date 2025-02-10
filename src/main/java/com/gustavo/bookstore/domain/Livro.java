@@ -1,13 +1,6 @@
 package com.gustavo.bookstore.domain;
-<<<<<<< HEAD
-
 import java.io.Serializable;
 import java.util.Objects;
-
-=======
-import java.io.Serializable;
-import java.util.Objects;
->>>>>>> b546b20 (Criacao do perfil de DV)
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,16 +8,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-<<<<<<< HEAD
-@Entity 
-public class Livro implements Serializable {
-	
-=======
 @Entity
 
 public class Livro implements Serializable {
 
->>>>>>> b546b20 (Criacao do perfil de DV)
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -33,29 +20,18 @@ public class Livro implements Serializable {
 	private String titulo;
 	private String nome_autor;
 	private String texto;
-<<<<<<< HEAD
-	
-	@ManyToOne
-	@JoinColumn(name = "categoria_id")
-	private Categoria categoria;
-
-=======
 
 	@ManyToOne
 	@JoinColumn(name = "categoria_id")
 	
 	private Categoria categoria;
 	
->>>>>>> b546b20 (Criacao do perfil de DV)
 	public Livro() {
 		super();
 	}
 
 	public Livro(Integer id, String titulo, String nome_autor, String texto, Categoria categoria) {
-<<<<<<< HEAD
-=======
 
->>>>>>> b546b20 (Criacao do perfil de DV)
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -66,10 +42,7 @@ public class Livro implements Serializable {
 
 	public Integer getId() {
 		return id;
-<<<<<<< HEAD
-=======
 
->>>>>>> b546b20 (Criacao do perfil de DV)
 	}
 
 	public void setId(Integer id) {
@@ -86,10 +59,7 @@ public class Livro implements Serializable {
 
 	public String getNome_autor() {
 		return nome_autor;
-<<<<<<< HEAD
-=======
 
->>>>>>> b546b20 (Criacao do perfil de DV)
 	}
 
 	public void setNome_autor(String nome_autor) {
@@ -119,10 +89,7 @@ public class Livro implements Serializable {
 
 	@Override
 	public boolean equals(Object obj) {
-<<<<<<< HEAD
-=======
 
->>>>>>> b546b20 (Criacao do perfil de DV)
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -131,13 +98,7 @@ public class Livro implements Serializable {
 			return false;
 		Livro other = (Livro) obj;
 		return Objects.equals(id, other.id);
-<<<<<<< HEAD
-	}
-
-}
-=======
 
 	}
 
 }
->>>>>>> b546b20 (Criacao do perfil de DV)
