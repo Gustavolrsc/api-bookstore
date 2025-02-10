@@ -12,7 +12,11 @@
 	<artifactId>bookstrore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bookstrore</name>
+<<<<<<< HEAD
 	<description>Projeto Spring Boot e Angular 10</description>
+=======
+	<description>Projeto Spring com Angular</description>
+>>>>>>> b546b20 (Criacao do perfil de DV)
 	<url/>
 	<licenses>
 		<license/>
@@ -55,23 +59,40 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
+=======
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+>>>>>>> b546b20 (Criacao do perfil de DV)
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		   <dependency>        
 		    <groupId>org.springframework.boot</groupId>      
 		       <artifactId>spring-boot-starter-jdbc</artifactId>   
 		     </dependency>
+=======
+>>>>>>> b546b20 (Criacao do perfil de DV)
 	</dependencies>
 
 	<build>
 		<plugins>
 			<plugin>
+<<<<<<< HEAD
 	        <groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-resources-plugin</artifactId>
 		<version>3.1.0</version>
 	</plugin>
+=======
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+>>>>>>> b546b20 (Criacao do perfil de DV)
 		</plugins>
 	</build>
 

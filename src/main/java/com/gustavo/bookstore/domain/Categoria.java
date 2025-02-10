@@ -4,7 +4,10 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b546b20 (Criacao do perfil de DV)
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,28 +15,54 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 @Entity
+<<<<<<< HEAD
+=======
+
+>>>>>>> b546b20 (Criacao do perfil de DV)
 public class Categoria implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
+<<<<<<< HEAD
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+=======
+
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+>>>>>>> b546b20 (Criacao do perfil de DV)
 	private Integer id;
 	private String nome;
 	private String descricao;
 
 	@OneToMany(mappedBy = "categoria")
+<<<<<<< HEAD
+=======
+
+>>>>>>> b546b20 (Criacao do perfil de DV)
 	private List<Livro> livros = new ArrayList<>();
 
 	public Categoria() {
 		super();
+<<<<<<< HEAD
 	}
 
 	public Categoria(Integer id, String nome, String descricao) {
+=======
+
+	}
+
+	public Categoria(Integer id, String nome, String descricao) {
+
+>>>>>>> b546b20 (Criacao do perfil de DV)
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b546b20 (Criacao do perfil de DV)
 	}
 
 	public Integer getId() {
@@ -75,6 +104,10 @@ public class Categoria implements Serializable {
 
 	@Override
 	public boolean equals(Object obj) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> b546b20 (Criacao do perfil de DV)
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -84,5 +117,9 @@ public class Categoria implements Serializable {
 		Categoria other = (Categoria) obj;
 		return Objects.equals(id, other.id);
 	}
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> b546b20 (Criacao do perfil de DV)
