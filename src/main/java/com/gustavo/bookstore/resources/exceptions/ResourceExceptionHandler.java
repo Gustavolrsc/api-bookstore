@@ -5,8 +5,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.gustavo.bookstore.exceptions.DataIntegrityViolationException;
-import com.gustavo.bookstore.exceptions.ObjectNotFoundException;
+import com.gustavo.bookstore.service.exceptions.DataIntegrityViolationException;
+import com.gustavo.bookstore.service.exceptions.ObjectNotFoundException;
 
 import jakarta.servlet.ServletRequest;
 
