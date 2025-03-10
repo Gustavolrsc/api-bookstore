@@ -1,7 +1,5 @@
 package com.gustavo.bookstore.resources.exceptions;
 
-import java.util.Iterator;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
