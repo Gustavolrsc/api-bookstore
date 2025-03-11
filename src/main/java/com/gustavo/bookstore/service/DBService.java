@@ -18,9 +18,6 @@ public class DBService {
 	private LivroRepository livroRepository;
 
 	public void instanciaBaseDeDados() {
-	    if (categoriaRepository.count() > 0) { 
-	        return; 
-	    }
 
 	    Categoria cat1 = new Categoria(null, "Informática", "Livros de TI");
 	    Categoria cat2 = new Categoria(null, "Ficção Científica", "Livros de ficção científica");
