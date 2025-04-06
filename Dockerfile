@@ -1,4 +1,16 @@
 FROM eclipse-temurin:17-jdk-alpine
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+# Copia o projeto inteiro pro container
+COPY . /app
+
+# Vai pra pasta do projeto
+WORKDIR /app
+
+# Instala o Maven e compila o projeto
+RUN ./mvnw clean package -DskipTests
+
+# Copia o JAR gerado
+COPY target/*.jar app.jar
+
+# Roda o app
+ENTRYPOINT ["java", "-jar", "app.jar"]
