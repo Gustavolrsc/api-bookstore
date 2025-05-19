@@ -8,20 +8,21 @@ import com.gustavo.bookstore.service.DBService;
 
 @Configuration
 @Profile("dev")
-
 public class DevConfig {
 
-	@Autowired
-	private DBService dbService;
+  @Autowired
+  private DBService dbService;
 
-	@Value("${spring.jpa.hibernate.ddl-auto}")
-	private String strategy;
+  @Value("${spring.jpa.hibernate.ddl-auto}")
+  private String strategy;
 
-	@Bean
-	public boolean instanciaBaseDeDados() {
-		if (strategy.equals("create")) {
-			this.dbService.instanciaBaseDeDados();
-		}
-		return false;
-	}
+  @Bean
+  public boolean instanciaBaseDeDados() {
+    if (strategy.equals("create")) {
+      dbService.instanciaBaseDeDados();
+      return true;
+    }
+    return false;
+  }
 }
+
